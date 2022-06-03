@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /// <reference types="cypress" />
 
 const restaurants = [
@@ -41,8 +42,8 @@ describe('Secret Menu Items', () => {
   });
 
   for (const property of properties) {
-    it(`should have a column for ${property}`, () => {
-      cy.get(`#${property}-column`);
+    it.only(`should have a column for ${property}`, () => {
+      cy.get(`#${property}-column`).should('exist');
     });
 
     it(`should have a column for showing the ${property} column`, () => {

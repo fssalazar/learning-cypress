@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
+/* eslint-disable no-undef */
 /// <reference types="cypress" />
 
 import '../support/commands-complete';
